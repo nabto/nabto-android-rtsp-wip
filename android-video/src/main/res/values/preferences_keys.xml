@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sharedPreferences">sharedPreferences</string>
+    <string name="sharedPreferences_Email">email</string>
+    <string name="sharedPreferences_Password">password</string>
+    <string name="sharedPreferences_autologin">autologin</string>
+    <string name="sharedPreferences_showUrlBar">showUrlBar</string>
+</resources>

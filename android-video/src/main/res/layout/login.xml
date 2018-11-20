@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:minHeight="400dp"
+    android:orientation="vertical"
+    android:padding="30dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="@string/login_h1"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="-10dp"
+            android:background="#bbb" />
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <CheckBox
+            android:id="@+id/autoCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="@string/login_auto" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout0"
+        android:layout_below="@+id/linearLayout0"
+        android:layout_marginTop="33dp"
+        android:text="@string/login_login_button" />
+
+    <Button
+        android:id="@+id/guestButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout0"
+        android:layout_below="@+id/loginButton"
+        android:text="@string/login_guest_button" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout0"
+        android:layout_below="@+id/guestButton"
+        android:text="@string/login_create_button" />
+
+    <Button
+        android:id="@+id/forgotButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout0"
+        android:layout_below="@+id/createButton"
+        android:text="@string/login_forgot_button" />
+
+</RelativeLayout>

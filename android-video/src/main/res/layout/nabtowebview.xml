@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/urlInput"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:hint="@string/url_input_text"
+            android:layout_weight="1"
+            android:minHeight="40dp"
+            android:paddingLeft="5dp"
+            android:inputType="textUri"
+            android:imeOptions="actionGo"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            />
+        
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_menu_refresh"
+            android:background="@android:color/transparent"
+            android:indeterminate="true"
+            android:padding="5dp"
+            android:visibility="gone"/>
+        
+        <ImageButton
+            android:id="@+id/refreshButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/refresh_button_description"
+            android:src="@drawable/ic_menu_refresh"
+            android:background="@android:color/transparent"
+            android:paddingRight="5dp"/>
+       
+    </LinearLayout>
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	    android:layout_gravity="center_vertical"
+	    android:gravity="center_vertical">
+            
+	    <com.nabto.webview.ZoomableWebView
+	        android:id="@+id/webview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent">
+       	<requestFocus/>
+        
+   		</com.nabto.webview.ZoomableWebView>
+   		
+	    <ProgressBar
+	        android:id="@+id/progressIcon"
+	        style="?android:attr/progressBarStyleLarge"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        android:layout_centerVertical="true"
+	        android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

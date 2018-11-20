@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/browser_back"
+        android:title="@string/back_button"
+        android:icon="@drawable/backselector"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/browser_forward"
+        android:title="@string/forward_button"
+        android:icon="@drawable/forwardselector"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/bookmark_list"
+        android:title="@string/bookmark_list_button"
+        android:icon="@drawable/ic_menu_archive"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/bookmark_add"
+        android:title="@string/bookmark_button"
+        android:icon="@drawable/ic_menu_add"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/set_as_home_page"
+        android:title="@string/set_as_home_page_button"/>
+    <item
+        android:id="@+id/change_credentials"
+        android:title="@string/change_credentials_button"/>
+    <item
+        android:id="@+id/toggle_url_bar"
+        android:title="@string/toggle_url_bar_button"/>
+    <item
+        android:id="@+id/qr_scan"
+        android:title="@string/qr_scan"/>
+</menu>
