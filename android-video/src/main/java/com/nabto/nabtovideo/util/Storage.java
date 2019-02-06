@@ -107,12 +107,13 @@ public class Storage {
         if (category != null && !category.equals("")) {
             categoryInt = Integer.parseInt(category);
         }
-
+        ///cam/realmonitor?channel=13&subtype=1
+//(reverse-i-search)`sim': simpleclient_app -q 9ixbrrhq.7t9bw.appmyproduct.com --tunnel 12345:172.16.0.197:554
         if (host == null) {
             host = "127.0.0.1";
         }
 
-        VideoDevice device = new VideoDevice(title, name, url, portInt, typeInt, categoryInt, host);
+        VideoDevice device = new VideoDevice(title, name, url, portInt, typeInt, categoryInt, host, "", "");
         addFavorite(context, device);
     }
 }

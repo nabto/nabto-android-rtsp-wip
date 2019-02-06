@@ -22,8 +22,10 @@ public class VideoDevice {
 	public int port = 80;
     public int category = 0;
     public String host = "127.0.0.1";
-	
-	public VideoDevice(String _title, String _name, String _url, int _port, int _type, int _category, String _host) {
+    public String basicauthUser = "";
+    public String basicauthPassword = "";
+
+	public VideoDevice(String _title, String _name, String _url, int _port, int _type, int _category, String _host, String _user, String _pass) {
 
         if (_title != null && !_title.equals("")) {
             title = _title;
@@ -51,6 +53,11 @@ public class VideoDevice {
 
         if (!_host.isEmpty()) {
             host = _host;
+        }
+
+        if (!_user.isEmpty()) {
+            basicauthUser = _user;
+            basicauthPassword = _pass;
         }
 	}
 

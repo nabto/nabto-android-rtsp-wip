@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:preference-v7-25.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/6ea530bbb92feb7f68a7aad25e17917eba9f6582/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6ea530bbb92feb7f68a7aad25e17917eba9f6582/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/preference-v7/25.0.1/preference-v7-25.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/preference-v7/25.0.1/preference-v7-25.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

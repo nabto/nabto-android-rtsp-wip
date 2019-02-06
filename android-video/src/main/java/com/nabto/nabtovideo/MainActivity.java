@@ -29,6 +29,7 @@ import android.widget.TextView;
 import com.nabto.NabtoBaseActivity;
 import com.nabto.api.NabtoAndroidAssetManager;
 import com.nabto.api.NabtoApi;
+import com.nabto.api.NabtoStatus;
 import com.nabto.api.NabtoTunnelState;
 import com.nabto.api.Tunnel;
 import com.nabto.api.TunnelInfoResult;
@@ -84,7 +85,13 @@ public class MainActivity extends NabtoBaseActivity {
 
     private void initializeNabto() {
         nabtoApi = new NabtoApi(new NabtoAndroidAssetManager(this));
-        nabtoApi.startup();
+        if (nabtoApi.startup() == NabtoStatus.OK) {
+            Log.i(this.getClass().getName(), "Nabto Client SDK started, version " + nabtoApi.versionString());
+        } else {
+            Log.e(this.getClass().getName(), "Nabto Client SDK could not start");
+            return;
+        }
+
         TunnelManager.instance().initialize(nabtoApi, email, password);
         Storage storage = new Storage();
         ArrayList devices = storage.getFavorites(this);
@@ -182,8 +189,11 @@ public class MainActivity extends NabtoBaseActivity {
     }
     
     private void startPlayerVideo(NabtoTunnelState state) {
-//        String baseUrl = "rtsp://admin:MBHPr5hObPfM@localhost:" + nabtoApi.tunnelInfo(tunnel).getPort(); /* y-cam test */
-        String baseUrl = "rtsp://127.0.0.1:" + nabtoApi.tunnelInfo(tunnel).getPort();
+        String basicAuthPrefix = "";
+        if (!activeDevice.basicauthUser.isEmpty()) {
+            basicAuthPrefix = activeDevice.basicauthUser + ":" + activeDevice.basicauthUser + "@";
+        }
+        String baseUrl = "rtsp://" + basicAuthPrefix + "127.0.0.1:" + nabtoApi.tunnelInfo(tunnel).getPort();
         if (!activeDevice.url.startsWith("/")) {
             baseUrl += "/";
         }

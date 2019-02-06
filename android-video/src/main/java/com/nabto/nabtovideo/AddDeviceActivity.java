@@ -95,12 +95,16 @@ public class AddDeviceActivity extends Activity implements AdapterView.OnItemSel
         EditText hostEditText = (EditText)findViewById(R.id.hostEditText);
         EditText portEditText = (EditText)findViewById(R.id.portEditText);
         EditText urlEditText = (EditText)findViewById(R.id.urlEditText);
+        EditText userEditText = (EditText)findViewById(R.id.basicAuthUserEditText);
+        EditText passEditText = (EditText)findViewById(R.id.basicAuthPasswordEditText);
 
         String title = titleEditText.getText().toString();
         String name = nameEditText.getText().toString().toLowerCase();
         String host = hostEditText.getText().toString().toLowerCase();
         String port = portEditText.getText().toString();
         String url = urlEditText.getText().toString();
+        String user = userEditText.getText().toString();
+        String pass = passEditText.getText().toString();
 
         if (name.isEmpty() || port.isEmpty()) {
             finish();
@@ -114,11 +118,11 @@ public class AddDeviceActivity extends Activity implements AdapterView.OnItemSel
 
         if (host.isEmpty()) {
             host = "127.0.0.1";
-        }
+        }   
 
         int typeInt = deviceType;
 
-        VideoDevice device = new VideoDevice(title, name, url, portInt, typeInt, 0, host);
+        VideoDevice device = new VideoDevice(title, name, url, portInt, typeInt, 0, host, user, pass);
         Storage storage = new Storage();
         storage.addFavorite(getApplicationContext(), device);
 

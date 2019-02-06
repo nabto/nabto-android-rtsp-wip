@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android-video/android-video.iml" filepath="$PROJECT_DIR$/android-video/android-video.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-arm64-release/ijkplayer-arm64-release.iml" filepath="$PROJECT_DIR$/ijkplayer-arm64-release/ijkplayer-arm64-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-armv7a-release/ijkplayer-armv7a-release.iml" filepath="$PROJECT_DIR$/ijkplayer-armv7a-release/ijkplayer-armv7a-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-example/ijkplayer-example.iml" filepath="$PROJECT_DIR$/ijkplayer-example/ijkplayer-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-java-release/ijkplayer-java-release.iml" filepath="$PROJECT_DIR$/ijkplayer-java-release/ijkplayer-java-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-x86-release/ijkplayer-x86-release.iml" filepath="$PROJECT_DIR$/ijkplayer-x86-release/ijkplayer-x86-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nabto-android-rtsp.iml" filepath="$PROJECT_DIR$/nabto-android-rtsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nabto-api/nabto-api.iml" filepath="$PROJECT_DIR$/nabto-api/nabto-api.iml" />
+    </modules>
+  </component>
+</project>

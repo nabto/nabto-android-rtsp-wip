@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: nabto-android-rtsp:nabto-api">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/1999cc285953c946e4bbbb5853fba3b2e9bdcee0/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/1999cc285953c946e4bbbb5853fba3b2e9bdcee0/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

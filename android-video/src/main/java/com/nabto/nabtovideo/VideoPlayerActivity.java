@@ -104,7 +104,7 @@ public class VideoPlayerActivity extends Activity {
         videoView.setOnErrorListener(new IMediaPlayer.OnErrorListener() {
             @Override
             public boolean onError(IMediaPlayer mp, int what, int extra) {
-                Log.e(this.getClass().getSimpleName(), "MediaPlayer onError: " + what);
+                Log.e(this.getClass().getSimpleName(), "MediaPlayer onError: " + what + ", extra: " + extra);
 
                 showErrorDialog(R.string.video_error_details);
                 return true;
